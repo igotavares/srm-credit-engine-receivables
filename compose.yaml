@@ -1,0 +1,18 @@
+services:
+  mockserver:
+    image: 'mockserver/mockserver:7.6.0'
+    environment:
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/expectations.json
+    ports:
+      - "1080:1080"
+    volumes:
+      - ./mocks/exchage_rate/expectations.json:/config/expectations.json:ro
+
+  postgres:
+    image: 'postgres:17-alpine'
+    environment:
+      - 'POSTGRES_DB=exchange_rate'
+      - 'POSTGRES_PASSWORD=srm'
+      - 'POSTGRES_USER=srm'
+    ports:
+      - "5434:5432"

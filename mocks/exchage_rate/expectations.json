@@ -1,0 +1,118 @@
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/v1/exchange-rates/USD/BRL",
+      "queryStringParameters": {
+        "at": [
+          ".+"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "id": "00000000-0000-0000-0000-000000000001",
+          "baseCurrency": "USD",
+          "quoteCurrency": "BRL",
+          "rate": "5.00",
+          "validFrom": "2000-01-01T00:00:00"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/v1/exchange-rates/BRL/USD",
+      "queryStringParameters": {
+        "at": [
+          ".+"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "id": "00000000-0000-0000-0000-000000000002",
+          "baseCurrency": "BRL",
+          "quoteCurrency": "USD",
+          "rate": "0.20",
+          "validFrom": "2000-01-01T00:00:00"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/v1/exchange-rates/BRL/BRL",
+      "queryStringParameters": {
+        "at": [
+          ".+"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "id": "00000000-0000-0000-0000-000000000003",
+          "baseCurrency": "BRL",
+          "quoteCurrency": "BRL",
+          "rate": "1.00",
+          "validFrom": "2000-01-01T00:00:00"
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/v1/exchange-rates/USD/USD",
+      "queryStringParameters": {
+        "at": [
+          ".+"
+        ]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "type": "JSON",
+        "json": {
+          "id": "00000000-0000-0000-0000-000000000004",
+          "baseCurrency": "USD",
+          "quoteCurrency": "USD",
+          "rate": "1.00",
+          "validFrom": "2000-01-01T00:00:00"
+        }
+      }
+    }
+  }
+]

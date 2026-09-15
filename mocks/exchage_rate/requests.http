@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:1080
+@at = 2026-09-14T12:00:00
+
+### USD para BRL — taxa fictícia 5.00
+GET {{baseUrl}}/api/v1/exchange-rates/USD/BRL?at={{at}}
+
+### BRL para USD — taxa fictícia 0.20
+GET {{baseUrl}}/api/v1/exchange-rates/BRL/USD?at={{at}}
+
+### BRL para BRL — taxa 1.00
+GET {{baseUrl}}/api/v1/exchange-rates/BRL/BRL?at={{at}}
+
+### USD para USD — taxa 1.00
+GET {{baseUrl}}/api/v1/exchange-rates/USD/USD?at={{at}}
