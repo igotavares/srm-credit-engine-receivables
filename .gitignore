@@ -1,0 +1,38 @@
+# Maven e arquivos compilados
+target/
+*.class
+
+# IntelliJ IDEA
+.idea/*
+!.idea/.gitignore
+*.iml
+*.ipr
+*.iws
+out/
+
+# Outros editores
+.vscode/
+.classpath
+.project
+.settings/
+
+# Configurações locais e variáveis de ambiente
+.env
+.env.*
+!.env.example
+!.env.sample
+http-client.private.env.json
+
+# Logs e diagnósticos da JVM
+*.log
+logs/
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# Arquivos temporários e do sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
